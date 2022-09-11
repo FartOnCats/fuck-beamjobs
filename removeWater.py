@@ -4,6 +4,10 @@ MAGICFONT = "/F4 18 0 R" # beamJobs uses this font for their logo, therefore eve
 
 """
 TO use simple switch test.pdf to the name of your file, will write output to output.pdf
+
+for the curious; how I managed to find which stream to remove.
+In pdf streams contain pretty much all the info that matters, so I just went through each object and removed the accociated stream and 
+recorded each change until the water mark was removed
 """
 f = open("test.pdf","rb")
 pdf = f.read()
