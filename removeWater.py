@@ -1,10 +1,10 @@
-import re
-
 MAGICFONT = "/F4 18 0 R" # beamJobs uses this font for their logo, therefore every element that uses this font is a watermark
 
 # solution? find font, cut out object
 
-
+"""
+TO use simple switch test.pdf to the name of your file, will write output to output.pdf
+"""
 f = open("test.pdf","rb")
 pdf = f.read()
 f.close()
