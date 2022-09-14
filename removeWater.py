@@ -21,7 +21,7 @@ while foundFontSig > 0:
     foundFontSig = pdf.find(b"\x2F\x46\x34\x20\x31\x38\x20\x30",startpointer)
     streamhead = pdf.find(b"stream",foundFontSig)
     streamend = pdf.find(b"endstream",foundFontSig)
-    segments.append((startpointer+6,streamhead))
+    segments.append((startpointer,streamhead))
     
     startpointer = streamend
 
